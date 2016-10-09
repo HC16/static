@@ -2,7 +2,7 @@ html,body {
   padding: 0;
   margin: 0;
   font-family: 'Noto Sans', sans-serif;
-  background: linear-gradient(to bottom, rgba(255,255,255,0), #fff), url('https://dl.dropboxusercontent.com/s/8y7dlp3zn9qumcr/foggy_birds_%402X.png') repeat left top scroll;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), #fff), url('https://dl.dropboxusercontent.com/s/68ufgna32p30a1k/square_bg.png') repeat left top scroll;
 }
 
 .content {
@@ -143,7 +143,7 @@ span.copyright {
     display: block;
     z-index: 99999;
   }
-  
+
   div.navbar-bg {
     display: block;
     opacity: 0;
