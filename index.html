@@ -1,30 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hackers Cafe</title>
     <link rel="icon" href="https://dl.dropboxusercontent.com/s/g75h3x3swec2pqj/hcafe-alpha.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:100,300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/jquery.fullPage.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css" />
     <meta name="theme-color" content="#111" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/vendors/jquery.easings.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/vendors/scrolloverflow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/jquery.fullPage.js"></script>
+    <script src="main.js"></script>
   </head>
   <body>
     <div class="navbar-bg"> </div>
     <ul class="navbar">
-      <li>
-        <i class="material-icons">public</i>
-        Mission
+      <li style="margin-right: 10px">
+        <a href="#home">
+          <i class="material-icons" style="font-size: 1.5em">home</i>
+        </a>
       </li>
       <li>
-        <i class="material-icons">devices</i>
-        Projects
+        <a href="#mission/0">
+          <i class="material-icons">public</i>
+          Mission
+        </a>
       </li>
       <li>
-        <i class="material-icons">free_breakfast</i>
-        Services
+        <a href="https://github.com/HC16">
+          <i class="material-icons">devices</i>
+          Projects
+        </a>
+      </li>
+      <li>
+        <a href="services.html">
+          <i class="material-icons">work</i>
+          Services
+        </a>
       </li>
     </ul>
 
@@ -32,18 +50,26 @@
       <i class="material-icons">menu</i>
     </span>
 
-    <div class="content">
-      <img src="https://dl.dropboxusercontent.com/s/g75h3x3swec2pqj/hcafe-alpha.png" alt="logo" />
-      <h1>We believe in <strong>digital freedom.</strong></h1>
-      <a href="mailto:hello@hackers.cafe">
-        Get In Touch
-        <i class="material-icons">chat_bubble</i>
-      </a>
+    <div id="fullpage" style="width: 100vw; height: 100vh;">
+      <div class="section" data-anchor="home">
+        <img src="https://dl.dropboxusercontent.com/s/g75h3x3swec2pqj/hcafe-alpha.png" alt="logo" />
+        <h1>We believe in <strong>digital freedom.</strong></h1>
+        <a href="mailto:hello@hackers.cafe">
+          Get In Touch
+          <i class="material-icons">chat_bubble</i>
+        </a>
+      </div>
+
+      <div class="section" data-anchor="mission" style="background-color: #fff;">
+
+        <h1>
+          <i class="material-icons">public</i>
+          <strong>Our Mission</strong>
+        </h1>
+
+      </div>
     </div>
 
     <span class="copyright">&copy; 2016 hackers cafe.</span>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="main.js"></script>
   </body>
 </html>

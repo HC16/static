@@ -5,20 +5,26 @@ html,body {
   background: linear-gradient(to bottom, rgba(255,255,255,0), #fff), url('https://dl.dropboxusercontent.com/s/68ufgna32p30a1k/square_bg.png') repeat left top scroll;
 }
 
-.content {
+div.section {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
-.content img {
+div.section .fp-tableCell {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#fullpage img {
   width: 120px;
   margin: auto auto 0;
 }
 
-.content h1 {
+#fullpage h1 {
   margin: 10px auto 20px;
   padding: 0 20px;
   box-sizing: border-box;
@@ -28,7 +34,7 @@ html,body {
   text-align: center;
 }
 
-.content a {
+#fullpage a {
   margin: 20px auto auto;
   display: block;
   flex: 0 0 auto;
@@ -47,18 +53,18 @@ html,body {
   transition: 150ms ease-out;
 }
 
-.content a:hover {
+#fullpage a:hover {
   background-color: #111;
   color: #fff;
   transition: 150ms ease-out;
 }
 
-.content a:hover i {
+#fullpage a:hover i {
   color: #fff;
   transition: 150ms ease-out;
 }
 
-.content a i {
+#fullpage a i {
   font-size: 1.1em;
   margin: auto 0 auto 10px;
   color: #111;
@@ -84,6 +90,7 @@ ul.navbar {
   bottom: 20px;
   left: 0;
   padding: 0;
+  z-index: 99999;
 }
 
 ul.navbar li {
@@ -94,13 +101,17 @@ ul.navbar li {
   padding: 0;
   margin: auto 20px;
   box-sizing: border-box;
+}
+
+ul.navbar li a {
   text-transform: uppercase;
   font-size: 0.9em;
   font-weight: 700;
   color: #444;
+  text-decoration: none;
 }
 
-ul.navbar li i {
+ul.navbar li a i {
   font-size: 1.1em;
   margin: auto 10px auto 0;
   color: #444;
@@ -114,7 +125,7 @@ span.copyright {
   position: fixed;
   bottom: 0;
   right: 0;
-  color: #ccc;
+  color: #aaa;
   padding: 20px;
   font-size: 0.9em;
   font-weight: 700;
