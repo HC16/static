@@ -141,8 +141,9 @@ span.copyright {
 @media all and (max-width: 768px) {
   .mobile-nav-toggle {
     display: block;
-
+    z-index: 99999;
   }
+  
   div.navbar-bg {
     display: block;
     opacity: 0;
