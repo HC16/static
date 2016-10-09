@@ -119,6 +119,7 @@ span.copyright {
   font-size: 0.9em;
   font-weight: 700;
   box-sizing: border-box;
+  z-index: 99999;
 }
 
 .mobile-nav-toggle {
@@ -130,6 +131,7 @@ span.copyright {
   padding: 0;
   color: #111;
   line-height: 1;
+  z-index: 9999999;
 }
 
 .mobile-nav-toggle i {
