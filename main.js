@@ -2,7 +2,7 @@ $('.mobile-nav-toggle').click(function () {
   toggleMenu();
 });
 
-$('.div.navbar-bg.open').click(function () {
+$('div.navbar-bg.open').click(function () {
   toggleMenu();
 });
 
