@@ -64,6 +64,16 @@ html,body {
   color: #111;
 }
 
+div.navbar-bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  zIndex: 99;
+}
+
 ul.navbar {
   list-style: none;
   display: flex;
@@ -71,9 +81,8 @@ ul.navbar {
   justify-content: center;
   margin: 0;
   position: fixed;
-  bottom: 0;
+  bottom: 20px;
   left: 0;
-  height: 50px;
   padding: 0;
 }
 
@@ -106,8 +115,68 @@ span.copyright {
   bottom: 0;
   right: 0;
   color: #aaa;
-  padding: 15px;
+  padding: 20px;
   font-size: 0.9em;
   font-weight: 700;
   box-sizing: border-box;
+}
+
+.mobile-nav-toggle {
+  display: none;
+  margin: 0;
+  position: fixed;
+  bottom: 15px;
+  left: 20px;
+  padding: 0;
+  color: #111;
+  line-height: 1;
+}
+
+.mobile-nav-toggle i {
+  font-size: 1.75em;
+}
+
+@media (max-width: 600px) {
+  .mobile-nav-toggle {
+    display: block;
+
+  }
+  div.navbar-bg {
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    background: rgba(0,0,0,0.5);
+    transition: 100ms ease-out;
+
+  }
+  div.navbar-bg.open {
+    opacity: 1;
+    pointer-events: auto;
+    transition: 100ms ease-out;
+
+  }
+
+  ul.navbar {
+    left: 0;
+    width: 100vw;
+    bottom: -100%;
+    padding-bottom: 60px;
+    height: auto;
+    background: #fff;
+    flex-flow: column nowrap;
+    zIndex: 9999;
+    transition: 100ms ease-out;
+  }
+  ul.navbar.open {
+    bottom: 0;
+    transition: 100ms ease-out;
+  }
+
+  ul.navbar li {
+    flex: 0 0 auto;
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+  }
 }
