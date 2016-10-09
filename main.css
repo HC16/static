@@ -136,7 +136,7 @@ span.copyright {
   font-size: 1.75em;
 }
 
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
   .mobile-nav-toggle {
     display: block;
 
