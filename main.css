@@ -164,7 +164,7 @@ span.copyright {
     height: auto;
     background: #fff;
     flex-flow: column nowrap;
-    zIndex: 9999;
+    z-index: 9999;
     transition: 100ms ease-out;
   }
   ul.navbar.open {
