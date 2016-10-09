@@ -1,0 +1,101 @@
+html,body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), #fff), url('https://dl.dropboxusercontent.com/s/8y7dlp3zn9qumcr/foggy_birds_%402X.png') repeat left top scroll;
+}
+
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content img {
+  width: 120px;
+  margin: auto auto 0;
+}
+
+.content h1 {
+  margin: 10px auto 20px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-size: 2em;
+  color: #111;
+  font-weight: 300;
+  text-align: center;
+}
+
+.content a {
+  margin: 20px auto auto;
+  display: block;
+  flex: 0 0 auto;
+  text-decoration: none;
+  color: #111;
+  border: 2px solid #111;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  font-weight: 700;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.content a i {
+  font-size: 1.1em;
+  margin: auto 0 auto 10px;
+  color: #111;
+}
+
+ul.navbar {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  padding: 0;
+}
+
+ul.navbar li {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  flex: 0 0 auto;
+  padding: 0;
+  margin: auto 20px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 700;
+  color: #444;
+}
+
+ul.navbar li i {
+  font-size: 1.1em;
+  margin: auto 10px auto 0;
+  color: #444;
+}
+
+span.copyright {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: #aaa;
+  padding: 15px;
+  font-size: 0.9em;
+  font-weight: 700;
+  box-sizing: border-box;
+}
