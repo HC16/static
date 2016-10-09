@@ -44,6 +44,18 @@ html,body {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  transition: 150ms ease-out;
+}
+
+.content a:hover {
+  background-color: #111;
+  color: #fff;
+  transition: 150ms ease-out;
+}
+
+.content a:hover i {
+  color: #fff;
+  transition: 150ms ease-out;
 }
 
 .content a i {
