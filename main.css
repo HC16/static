@@ -71,7 +71,7 @@ div.navbar-bg {
   left: 0;
   right: 0;
   bottom: 0;
-  zIndex: 99;
+  z-index: 99;
 }
 
 ul.navbar {
